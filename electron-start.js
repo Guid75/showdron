@@ -1,16 +1,11 @@
 'use strict';
 
-var electron = require('electron');
-var {app, BrowserWindow, ipcMain} = electron;
+const electron = require('electron');
+const {app, BrowserWindow, ipcMain} = electron;
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is GCed.
 var mainWindow = null;
-
-ipcMain.on('async', (event, arg) => {
-	console.log(arg);
-	event.sender.send('async-reply', 2);
-});
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function() {

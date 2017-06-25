@@ -1,5 +1,8 @@
 {
-  "name"    : "showdron",
-  "version" : "1.0.0",
-  "main"    : "electron-start.js"
+  "name": "showdron",
+  "version": "1.0.0",
+  "main": "electron-start.js",
+  "devDependencies": {
+    "devtron": "^1.4.0"
+  }
 }
